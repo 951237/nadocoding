@@ -3,8 +3,8 @@ import pandas as pd
 
 dataset = pd.read_csv('test.csv')
 
-x = dataset.iloc[:, :-1]
-y = dataset.iloc[:, -1]
+x = dataset.iloc[:, :-1].values
+y = dataset.iloc[:, -1].values
 
 from sklearn.linear_model import LinearRegression
 
